@@ -2,3 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body::-webkit-scrollbar{
+display: none;
+}
+
+.textarea {
+    width: 100%;
+    max-width: 38vw;
+    min-width: 250px;
+    max-height: 15rem; /* Adjust the max height as needed */
+    overflow-y: auto;
+    resize: none; /* Prevents resizing */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+  }
+  
+  .textarea::-webkit-scrollbar {
+    display: none; /* Safari, Chrome, and Brave */
+  }
+  
+  @media (max-width: 768px) {
+    .textarea {
+      max-width: 80vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .textarea {
+      max-width: 90vw;
+    }
+  }
+  

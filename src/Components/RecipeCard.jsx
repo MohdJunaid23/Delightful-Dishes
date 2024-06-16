@@ -20,6 +20,7 @@ const RecipeCard = (props) => {
       toast.success("Recipe deleted successfully!");
       navigate("/recipes");
     };
+
   };
   if (!props.recipe) {
     return <h1>Loading...</h1>
@@ -33,7 +34,8 @@ const RecipeCard = (props) => {
           <h3>{description }</h3>
         </div>
         <div className='btn flex gap-4'>
-        <button className='mt-2 px-3 py-1 border rounded text-white active:scale-95 transition ease-in-out hover:bg-yellow-600'><Link to={`/viewRecipe/${id}`}> View recipe </Link></button>
+        <button className='mt-2 px-3 py-1 text-sm border rounded text-white active:scale-95 transition ease-in-out hover:bg-green-600'><Link to={`/viewRecipe/${id}`}> View recipe </Link></button>
+        <button className='mt-2 px-3 py-1 border rounded text-white active:scale-95 transition ease-in-out hover:bg-yellow-600'><Link to={`/update/${id}`}>Update</Link></button>
         <button onClick={deleteHandler} className='mt-2 px-3 py-1 border rounded text-white active:scale-95 transition ease-in-out hover:bg-red-600'>Delete</button>
         </div>
         </div>

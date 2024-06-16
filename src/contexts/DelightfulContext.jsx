@@ -7,7 +7,6 @@ const DelightfulContext = (props) => {
   useEffect(() => {
     try {
       const storedRecipes = localStorage.getItem("recipes");
-      console.log(storedRecipes);
       // Check if storedRecipes is not null and not an empty string
       if (storedRecipes) {
         const parsedRecipes = JSON.parse(storedRecipes);

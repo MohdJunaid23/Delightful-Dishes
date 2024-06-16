@@ -6,6 +6,7 @@ import Blog from '../Components/Blog'
 import Contact from '../Components/Contact'
 import CreateRecipe from '../Components/CreateRecipe'
 import ViewRecipe from '../Components/ViewRecipe'
+import UpdateRecipe from '../Components/UpdateRecipe.jsx'
 
 export const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ export const AppRouter = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/createRecipe' element={<CreateRecipe />} />
         <Route path='/viewRecipe/:id' element={<ViewRecipe />} />
+        <Route path='/update/:id' element={<UpdateRecipe />} />
       </Routes>
     </div>
   )
