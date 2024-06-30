@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Nav = () => {
   return (
     <div>
-      <div className="top flex w-[100%] h-[100px]">
+      <div className="top flex w-[100%] h-[70px]">
             <div className="logo text-2xl opacity-95 font-bold flex flex-col items-center w-[130px] h-[130px]">
               <h1> Delightful</h1>
               <h1> Dishes</h1>
